@@ -1,15 +1,70 @@
 /* Основные стили для страницы */
 body {
-    font-family: 'Roboto', sans-serif; /* шрифт, похожий на Notion */
-    background-color: #f8f8f8; /* светлый фон */
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #111111;
+    margin: 0 0 1em;
+}
+
+p {
+    margin: 0 0 1.5em;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1558b0;
 }
 
 /* Навигация */
 header {
     background-color: #fff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* легкая тень */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    /* легкая тень */
     padding: 20px 0;
 }
 
@@ -31,7 +86,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #007bff; /* синий цвет при наведении */
+    color: #007bff;
+    /* синий цвет при наведении */
 }
 
 /* Главная страница */
@@ -40,26 +96,6 @@ main {
     margin: 0 auto;
     padding: 40px;
     text-align: center;
-}
-
-h1 {
-    font-size: 36px;
-    color: #333;
-}
-
-button {
-    background-color: #007bff; /* кнопка с синим цветом */
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #0056b3; /* темный синий при наведении */
 }
 
 /* Footer */
