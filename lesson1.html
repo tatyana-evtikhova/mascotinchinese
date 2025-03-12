@@ -4,43 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 1: Tones, Greetings and Basic Expressions</title>
+    <title>Урок 1: Тоны, приветствия и базовые фразы</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Tones, Greetings and Basic Expressions</h1>
+        <h1>Тоны, приветствия и базовые фразы</h1>
     </header>
     <main>
         <section id="tone-training">
-            <h2>Understanding Chinese Tones</h2>
-            <p>Mandarin Chinese is a tonal language, which means that the pitch pattern of a syllable affects its
-                meaning...</p>
+            <h2>Понимание тонов в китайском языке</h2>
+            <p>Мандаринский китайский — это тональный язык, что означает, что высотный контур слога влияет на его
+                значение. Это отличает китайский язык от большинства европейских языков, где слово не изменяет своего
+                смысла в зависимости от интонации. В китайском языке есть четыре тона, каждый из которых имеет свою
+                уникальную высоту и направление звука. Важно правильно произносить тона, чтобы избежать путаницы в
+                значении слов.</p>
             <div class="tone" data-tone="1">
-                <h3>First Tone</h3>
-                <p>High and steady pitch, like singing a single high note.</p>
+                <h3>Первый тон</h3>
+                <p>Высокий и ровный тон, как если бы вы пели одну высокую ноту.</p>
                 <button onclick="playTone('mā')">Play Example: 妈 (mā)</button>
             </div>
-            <!-- Add more tones here -->
+            <div class="tone" data-tone="2">
+                <h3>Второй тон</h3>
+                <p>Растущий тон, как если бы вы спросили "Что?"</p>
+                <button onclick="playTone('má')">Play Example: 麻 (má)</button>
+            </div>
+            <div class="tone" data-tone="3">
+                <h3>Третий тон</h3>
+                <p>Третий тон в китайском языке начинается с понижения высоты звука, а затем снова поднимается, создавая
+                    форму, похожую на впадину.</p>
+                <button onclick="playTone('mǎ')">Play Example: 马 (mǎ)</button>
+            </div>
+            <div class="tone" data-tone="4">
+                <h3>Четвертый тон</h3>
+                <p>Резкое падение высоты звука, подобно командному или утверждению с авторитетным тоном.</p>
+                <button onclick="playTone('mà')">Play Example: 骂 (mà)</button>
+            </div>
+            <div class="tone" data-tone="neutral">
+                <h3>Нейтральный тон</h3>
+                <p>Характеризуется легким и коротким звучанием, похожим на быстрый, непродолжительный щелчок или касание
+                </p>
+                <button onclick="playTone('de')">Play Example: 的 (de)</button>
+            </div>
         </section>
         <section id="basic-greetings">
-            <h2>Basic Greetings</h2>
+            <h2>Базовые приветствия</h2>
             <div class="greeting" onclick="speak('你好')">
-                <p>你好 (Nǐ hǎo) - Hello</p>
+                <p>你好 (Nǐ hǎo) - Привет</p>
             </div>
-            <!-- Add more greetings here -->
+            <div class="greeting" onclick="speak('早上好')">
+                <p>早上好 (Zǎo shang hǎo) - Доброе утро</p>
+            </div>
+            <div class="greeting" onclick="speak('下午好')">
+                <p>下午好 (Xià wǔ hǎo) - Добрый день</p>
+            </div>
+            <div class="greeting" onclick="speak('晚上好')">
+                <p>晚上好 (Wǎn shang hǎo) - Добрый вечер</p>
+            </div>
+            <div class="greeting" onclick="speak('您好')">
+                <p>您好 (Nín hǎo) - Здравствуйте (вежливо)</p>
+            </div>
         </section>
+
         <section id="thank-you-power">
-            <h2>Thank You Power</h2>
+            <h2>Сила благодарности</h2>
             <div class="thank-you" onclick="speak('谢谢')">
-                <p>谢谢 (Xiè xie) - Thank you</p>
+                <p>谢谢 (Xiè xie) - Спасибо</p>
             </div>
-            <!-- Add more thank you expressions here -->
+            <div class="thank-you" onclick="speak('谢谢您')">
+                <p>谢谢您 (Xiè xie nín) - Спасибо (вежливо)</p>
+            </div>
+            <div class="thank-you" onclick="speak('非常感谢')">
+                <p>非常感谢 (Fēi cháng gǎn xiè) - Огромное спасибо</p>
+            </div>
+            <div class="thank-you" onclick="speak('多谢')">
+                <p>多谢 (Duō xiè) - Большое спасибо</p>
+            </div>
+            <div class="thank-you" onclick="speak('谢谢你的帮助')">
+                <p>谢谢你的帮助 (Xiè xie nǐ de bāng zhù) - Спасибо за вашу помощь</p>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>Study Tips and Common Mistakes</p>
+        <p>Советы по изучению и распространенные ошибки</p>
     </footer>
     <script src="script.js"></script>
 </body>
