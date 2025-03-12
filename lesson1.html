@@ -1,29 +1,48 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Урок 1: Приветствия</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: Tones, Greetings and Basic Expressions</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Урок 1: Приветствия</h1>
-        <a href="index.html">Назад на главную</a>
+        <h1>Tones, Greetings and Basic Expressions</h1>
     </header>
-    
-    <section>
-        <h2>Базовые приветствия</h2>
-        <p>你好 (nǐ hǎo) – Привет</p>
-        <button onclick="speak('你好')">🔊 Прослушать</button>
-        
-        <p>早上好 (zǎo shàng hǎo) – Доброе утро</p>
-        <button onclick="speak('早上好')">🔊 Прослушать</button>
-        
-        <p>晚上好 (wǎn shàng hǎo) – Добрый вечер</p>
-        <button onclick="speak('晚上好')">🔊 Прослушать</button>
-    </section>
-    
+    <main>
+        <section id="tone-training">
+            <h2>Understanding Chinese Tones</h2>
+            <p>Mandarin Chinese is a tonal language, which means that the pitch pattern of a syllable affects its
+                meaning...</p>
+            <div class="tone" data-tone="1">
+                <h3>First Tone</h3>
+                <p>High and steady pitch, like singing a single high note.</p>
+                <button onclick="playTone('mā')">Play Example: 妈 (mā)</button>
+            </div>
+            <!-- Add more tones here -->
+        </section>
+        <section id="basic-greetings">
+            <h2>Basic Greetings</h2>
+            <div class="greeting" onclick="speak('你好')">
+                <p>你好 (Nǐ hǎo) - Hello</p>
+            </div>
+            <!-- Add more greetings here -->
+        </section>
+        <section id="thank-you-power">
+            <h2>Thank You Power</h2>
+            <div class="thank-you" onclick="speak('谢谢')">
+                <p>谢谢 (Xiè xie) - Thank you</p>
+            </div>
+            <!-- Add more thank you expressions here -->
+        </section>
+    </main>
+    <footer>
+        <p>Study Tips and Common Mistakes</p>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
