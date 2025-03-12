@@ -1,12 +1,16 @@
+/* Основные стили для страницы */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* шрифт, похожий на Notion */
+    background-color: #f8f8f8; /* светлый фон */
     margin: 0;
     padding: 0;
 }
 
+/* Навигация */
 header {
-    background-color: #333;
-    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* легкая тень */
+    padding: 20px 0;
 }
 
 header nav ul {
@@ -16,26 +20,55 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 header nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 500;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    color: #007bff; /* синий цвет при наведении */
 }
 
+/* Главная страница */
 main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
     text-align: center;
-    margin-top: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
 }
 
 button {
+    background-color: #007bff; /* кнопка с синим цветом */
+    color: white;
     padding: 10px 20px;
     font-size: 16px;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3; /* темный синий при наведении */
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
